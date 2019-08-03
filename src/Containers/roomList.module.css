@@ -1,0 +1,31 @@
+.roomlistdiv{
+    width: 100%;
+    margin: 8px;
+}
+
+.roomname{
+    margin: 8px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.roominput{
+    display: inline-block;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: rgb(75, 218, 56);
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+

@@ -7,6 +7,7 @@ import actions from '../Actions/actions';
 import Main from '../Containers/Main';
 import Chatroom from '../Containers/ChatRoom';
 import Popup from '../Components/popup';
+import classes from './Auxiliary.module.css';
 
 class Aux extends Component{
 
@@ -63,7 +64,7 @@ class Aux extends Component{
 
     render(){
         return(
-            <div>
+            <div className={classes.header}>
                 {this.state.popup}
                 <Route path="/" exact component={Main}/>
                 <Route path="/room" exact component={Chatroom}/>

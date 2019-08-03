@@ -1,0 +1,14 @@
+.spanbg{
+    background-image: linear-gradient(to right, rgb(119, 173, 102), rgb(3, 128, 34));
+    -webkit-background-clip: text;
+
+    color: transparent;
+}
+
+.namediv{
+    font-weight: 900;
+    margin-bottom: 8px;
+    border: 3px outset rgb(119, 173, 102);
+    padding: 0 8px;
+    word-wrap: break-word;
+}

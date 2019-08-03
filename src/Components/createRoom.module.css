@@ -1,0 +1,54 @@
+.roomdiv{
+    position: relative;
+    height: 65vh;
+    background-image: linear-gradient(to right bottom, rgba(205, 224, 202, 0.8),
+    rgba(40, 180, 131, 0.8)) ,url("../Assets/images/pexels-photo-1308624.jpeg");
+    border-radius: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 95%);
+}
+
+.roomheader{
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+.roominputdiv{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.roominput{
+    display: inline-block;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.roombutton{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.roombutton:hover{
+    background-color: rgb(22, 221, 29);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.roombutton:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }

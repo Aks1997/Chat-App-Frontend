@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import Room from '../Components/room';
 import Popup from '../Components/popup';
-
+import classes from './roomList.module.css';
 class RoomList extends Component{
 
     state={
@@ -62,6 +62,10 @@ class RoomList extends Component{
     onSubmit(e){
         this.setState({warning: ""});
         if(this.state.name!=="" && this.state.password!==""){
+            if(this.state.name.length>20){
+                this.setState({warning: "Name length Can't exceed 20 characters"});
+                return;
+            }
             this.setState({showpopup: false}, ()=>{
                 this.props.data.socket.emit('joinRoom', {
                     name: this.state.name,
@@ -82,17 +86,17 @@ class RoomList extends Component{
     render(){
 
         const inp =<div>
-                    <h4>Room: {this.state.room}</h4>
-                    <input type="text" placeholder="Your Name" onChange={(e)=>this.nameChangeHandler(e)}></input>
+                    <h4 className={classes.roomname}>Room: {this.state.room}</h4>
+                    <input className={classes.roominput} type="text" placeholder="Your Name" onChange={(e)=>this.nameChangeHandler(e)}></input>
                     <br/>
                     <br/>
-                    <input type="password" placeholder="password" onChange={(e)=>this.passChangeHandler(e)}></input>
+                    <input className={classes.roominput} type="password" placeholder="password" onChange={(e)=>this.passChangeHandler(e)}></input>
                     <br/>
-                    <button onClick={(e)=>this.onSubmit(e)}>Submit</button>
+                    <button className={classes.btn} onClick={(e)=>this.onSubmit(e)}>Submit</button>
                 </div>;
 
         return(
-            <div>
+            <div className={classes.roomlistdiv}>
                 {this.state.showpopup ?
                     <Popup
                     buttonMess={"Close"}

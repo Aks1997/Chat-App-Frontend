@@ -34,6 +34,14 @@ class Main extends Component{
 
     buttonClickedHandler(e){
         if(this.state.name!=="" && this.state.room!=="" && this.state.password!==""){
+            if(this.state.name.length>20){
+                this.createPopup("Name length Can't exceed 20 characters","Close");
+                return;
+            }
+            if(this.state.room.length>20){
+                this.createPopup("Room Name length Can't exceed 20 characters","Close");
+                return;
+            }
             this.props.data.socket.emit('createRoom', {
                 name: this.state.name,
                 room: this.state.room,

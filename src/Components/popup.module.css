@@ -7,6 +7,7 @@
     right: 0;  
     bottom: 0;  
     margin: auto;  
+    z-index: 1000 !important; 
     background-color: rgba(0,0,0, 0.5);  
   }  
   .popup_inner {  
@@ -16,6 +17,21 @@
     top: 25%;  
     bottom: 25%;  
     margin: auto;  
-    border-radius: 20px;  
+    border-radius: 20px; 
     background: white;  
+  }
+
+  .popupheader{
+    margin: 8px;
+    text-transform: uppercase;
+  }
+
+  .btn{
+    background-color: rgb(218, 56, 56);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }

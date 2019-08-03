@@ -1,0 +1,45 @@
+.message_outer_div{
+    display: table;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.message_outer_div:last-child{
+    margin-bottom: 100px;
+}
+
+.details{
+    width: 10%;
+    display: table-cell;
+}
+
+.message_me{
+   background-image: linear-gradient(to right bottom, #fff, rgb(192, 180, 180));
+   clip-path: polygon(0 0, 95% 0, 95% 45%, 100% 50%, 95% 55%, 95% 100%, 0 100%);
+}
+
+.message_from{
+    background-image: linear-gradient(to right bottom, rgb(253, 213, 213), rgb(168, 109, 109));
+    clip-path: polygon(5% 40%, 5% 0, 100% 0, 100% 100%, 5% 100%, 5% 55%, 0 45%);
+ }
+
+ .message_from p{
+    margin-left: 6%;
+    color: #000;
+ }
+
+ .message_me p{
+    color: #000;
+ }
+
+.message_common{
+    border-radius: 5px;
+    padding: 8px; 
+    width:80%;
+    text-align: left;
+    display: table-cell;
+}
+
+.messdiv{
+    width: 94%;
+}

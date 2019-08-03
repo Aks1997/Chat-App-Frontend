@@ -5,8 +5,8 @@ const initialState = {
     socket: openSocket('http://localhost:4000'),
     _id: "",
     id: "",
-    name: "",
-    room: ""
+    name: "Akhil",
+    room: "Cricket"
 }
 
 const userReducer = (state = initialState, action)=>{
