@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ec2a326.chunk.css",
+    "main.js": "/static/js/main.ba914a64.chunk.js",
+    "main.js.map": "/static/js/main.ba914a64.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.7a8cdbbf.chunk.js": "/static/js/2.7a8cdbbf.chunk.js",
+    "static/js/2.7a8cdbbf.chunk.js.map": "/static/js/2.7a8cdbbf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.29f3f06f0dd0d4bdfd8723cda67c4443.js": "/precache-manifest.29f3f06f0dd0d4bdfd8723cda67c4443.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6ec2a326.chunk.css.map": "/static/css/main.6ec2a326.chunk.css.map",
+    "static/media/createRoom.module.css": "/static/media/pexels-photo-1308624.adc7e3f2.jpeg"
+  }
+}
