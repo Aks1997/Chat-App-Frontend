@@ -31,7 +31,7 @@ class ChatRoom extends Component{
             this.delUser(obj);
         });
         
-        axios.get("http://localhost:4000/getrooms/getonlineusers",{params:{
+        axios.get("http://104.198.170.77:4000/getrooms/getonlineusers",{params:{
             _id: this.props.data._id
         }})
             .then(res=>{

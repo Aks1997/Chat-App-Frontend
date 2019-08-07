@@ -2,7 +2,7 @@ import actions from '../Actions/actions';
 import openSocket from 'socket.io-client';
 
 const initialState = {
-    socket: openSocket('http://localhost:4000'),
+    socket: openSocket('http://104.198.170.77:4000'),
     _id: "",
     id: "",
     name: "Akhil",

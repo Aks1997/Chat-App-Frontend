@@ -12,7 +12,7 @@ class RoomList extends Component{
         room:"",
         password:"",
         warning:"",
-        base_url: "http://localhost:4000",
+        base_url: "http://104.198.170.77:4000",
         rooms:[],
         roomsToShow:null,
         showpopup:false
